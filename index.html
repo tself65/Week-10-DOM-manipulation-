@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urgent Care Check-In</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        h1 {text-align: center;}
+        body {background-color: rgb(223, 218, 218)}
+    </style>
+</head>
+<body class="container">
+    <h1>Urgent Care</h1>
+   <br>
+    <div class="card">
+        <div class="card-body">
+            <h2>Check-In</h2>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-first-name">First Name</label>
+                        <input type="text" class="form-control" id="new-first-name">
+                    </div>
+                </div>    
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-last-name">Last Name</label>
+                        <input type="text" class="form-control" id="new-last-name">
+                    </div>    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>    
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">Time</label>
+                        <input type="time" class="form-control" id="new-end-date">
+                    </div>    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-item">Reason for Visit</label>
+                        <input type="text" class="form-control" id="new-item" placeholder="What can we help you with today?">
+                    </div>   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-item">Insurance Card</label>
+                        <input type="file" class="form-control" id="new-file">
+                    </div>   
+                </div>
+            </div>
+            <br>
+            <button id="add" class="btn btn-primary from-control">Submit</button>
+        </div>
+    </div>
+
+    <table id="list" class="table table-info table-striped table-hover">
+        <tr>
+            <th>Reason for Visit</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Delete</th>
+        </tr>
+
+    </table> <br>
+
+
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
